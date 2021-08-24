@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: Tieude;
+}
+@font-face {
+  font-family: Tieude;
+  src: url("../font/KaushanScript-Regular.ttf");
+}
+#banner
+{
+	background: linear-gradient(rgba(0,0,0,0.5),#624747),url("../image/what-the-air-jordan-4-wallpaper-4k.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 900px;
+}
+.logo
+{
+	width: 200px;
+	position: absolute;
+	top:5%;
+	left:8%;
+	animation: animlogo 2s 2s linear infinite;
+}
+@keyframes animlogo
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+.banner_text
+{
+	text-align: center;
+	color: aliceblue;
+	padding-top: 180px;
+}
+.banner_text h1
+{
+	font-size: 100px;
+}
+.banner_text p
+{
+	font-size: 30px;
+	font-style: italic;
+}
+.banner_btn
+{
+	margin: 60px auto 0;
+}
+.banner_btn a
+{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: coral;
+	border: .5px solid #AB9D9D ;
+	position: relative;
+	z-index: 1;
+	transition: color 0.5s;
+}
+.banner_btn a span
+{
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top : 0;
+	left : 0;
+	background: #AB9D9D;
+	z-index: -1 ;
+	transition: 0.5s;
+}
+.banner_btn a:hover span
+{
+	width: 100%;
+}
+.banner_btn a:hover
+{
+	color:darkslategray;
+}
+.menu
+{
+	width: 10%;
+	height: 70px;
+	float: right;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#AboutUs
+{
+	width: 100%;
+	padding: 70px 0;
+}
+.title-text
+{
+	text-align: center;
+	padding-bottom: 70px;
+}
+.title-text p
+{
+	margin: auto;
+	font-size: 20px;
+	color: darkorange;
+	font-weight: bold;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+
+.title-text h1
+{
+	font-size: 50px;
+}
+.AboutUs-Box
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	text-align: center;
+}
+.AboutUs
+{
+	flex-basis: 50%;
+}
+.AboutUs-img
+{
+	flex-basis: 50%;
+	margin: auto;
+}
+.AboutUs-img img
+{
+	width: 80%;	
+	border-radius: 10px;
+}
+.AboutUs h1
+{
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: sandybrown;
+}
+.AboutUs-desc
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+#Services
+{
+	width: 100%;
+	padding: 70px 0;
+	background: #B5ABAC;
+}
+.Services-box
+{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+.single-Services
+{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color: aliceblue;
+	position: relative;
+}
+.single-Services img
+{
+	width: 100%;
+	border-radius: 7px;
+}
+.overlay
+{
+	width: 100%;
+	height : 100%;
+	position: absolute;
+	top :0;
+	border-radius: 7px;
+	cursor: pointer;
+	background: linear-gradient(rgba(0,0,0,0.5),#DBBEBF);
+	opacity: 0;
+	transition: 1s;
+}
+.single-Services:hover .overlay
+{
+	opacity: 1;
+}
+.Services-text
+{
+	width: 80%;
+	position: absolute;
+	bottom: 40%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+hr
+{
+	background: #D8CBCB;
+	height: 2px;
+	border: 0;
+	margin:15px auto;
+	width : 60%;
+}
+.Services-text p
+{
+	font-size: 14px;
+}
+#Client
+{
+	width: 100%;
+	padding : 70px 0 ;
+}
+.Client-row
+{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;	
+}
+.Client-col
+{
+	flex-basis: 28%;
+	padding : 10px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	box-shadow: 0 10px 20px 3px #DBBEBF ;
+	cursor: pointer;
+	transition: transform .5s;
+}
+.Client-col p
+{
+	font-size: 14px;
+	
+}
+.user
+{
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+}
+.user img
+{
+	width: 40px;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+.info small
+{
+	color:blue;
+}
+.Client-col:hover
+{
+	transform: translateY(8px);
+}
+#Contact
+{
+	padding: 100px 0 20px;
+	background: #C4B8B8;
+	position: relative;
+}
+.Contact-row
+{
+	width: 80%;
+	margin: 0 auto;
+	display : flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+.Contact-left , .Contact-right
+{
+	flex-basis: 45%;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.Contact-right
+{
+	text-align: right;
+}
+.Contact-row h1
+{
+	margin: 10px;
+}
+.Contact-row p
+{
+	line-height: 35px;
+}
+.Contact-img
+{
+	max-width: 370px;
+	opacity: 0.2;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translate(-50%, -50%);
+}
